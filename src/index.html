@@ -14,21 +14,24 @@
     <link rel="stylesheet" href="./sass/styles.css" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        class="input-form"
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button class="form-button" type="submit">Search</button>
-    </form>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          class="input-form"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button class="form-button" type="submit">Search</button>
+      </form>
 
-    <ul class="gallery">
-      <!-- Список <li> с карточками изображений -->
-    </ul>
-    <button class="load-more hidden" id="load-more">Load more</button>
+      <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+      </ul>
+      <button class="load-more hidden" id="load-more">Load more</button>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
