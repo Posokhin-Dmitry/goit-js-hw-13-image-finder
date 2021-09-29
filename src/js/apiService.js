@@ -36,5 +36,13 @@ loadMoreBtn.addEventListener('click', () => {
     .then(r => r.json())
     .then(data => {
       list.insertAdjacentHTML('beforeend', imgCard(data.hits));
+      const elementForId = data.hits[10].id;
+      console.log(elementForId);
+      const findId = document.getElementById(`${elementForId}`);
+      console.log(findId);
+      findId.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
     });
 });
